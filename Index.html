@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="hero">
+        <h1>Testimonials</h1>
+        <div class="container">
+            <div class="indicator">
+                <span class="btn active"></span>
+                <span class="btn"></span>
+                <span class="btn"></span>
+                <span class="btn"></span>
+            </div>
+            <div class=" testimonial">
+                <div class="style-row" id="slide">
+                    <div class="style-col">
+                        <div class="text">
+                            <p>Jim Kennedy Is a very hardworking Front-End Developer Who is dedicated to meet his client needs.
+                                He has excellent intrapersonal skills that always keeps his clients gladly satisfied.
+                            </p>
+                            <h3>Zara Larson</h3>
+                            <p>Software Engineer</p>
+                        </div>
+                        <div class="img">
+                            <img src="img/cool.jpg">
+                        </div>
+                    </div>
+                    <div class="style-col">
+                        <div class="text">
+                            <p>He always wants the best for every client he works with. 
+                                Client Satisfaction is always top of his agenda, and he never rests until he achieves this.
+                            </p>
+                            <h3>Grewal Omata</h3>
+                            <p>Informatiion Systems Specialist</p>
+                        </div>
+                        <div class="img">
+                            <img src="img/grewal.jpg">
+                        </div>
+                    </div>
+                    <div class="style-col">
+                        <div class="text">
+                            <p>He is very creative, he knows how to come up with new ideas for every situation.
+                                Even when there might seem to be no way ahead, he knows how to o about such Situation.
+                            </p>
+                            <h3>Zara Larson</h3>
+                            <p>Software Engineer</p>
+                        </div>
+                        <div class="img">
+                            <img src="img/cool.jpg">
+                        </div>
+                    </div>
+                    <div class="style-col">
+                        <div class="text">
+                            <p>Kennedy is very dedicated to his work. This makes him stand out among every other Front-End Developer out there. 
+                                He never tires even if what he's working on seems not to work
+                            </p>
+                            <h3>Ian Zablon</h3>
+                            <p>Chemical Engineer</p>
+                        </div>
+                        <div class="img">
+                            <img src="img/ian.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <script>
+        var btn = document.getElementsByClassName("btn");
+        
+        var slide = document.getElementById("slide");
+
+        btn[0].onclick = function (){
+            slide.style.transform = "translateX(0px)";
+            for(i=0; i<4; i++){
+                btn[i].classList.remove("active");
+            }
+            this.classList.add("active");
+        }
+        btn[1].onclick = function (){
+            slide.style.transform = "translateX(-800px)";
+            for(i=0; i<4; i++){
+                btn[i].classList.remove("active");
+            }
+            this.classList.add("active");
+        }
+        btn[2].onclick = function (){
+            slide.style.transform = "translateX(-1600px)";
+            for(i=0; i<4; i++){
+                btn[i].classList.remove("active");
+            }
+            this.classList.add("active");
+        }
+        btn[3].onclick = function (){
+            slide.style.transform = "translateX(-2400px)";
+            for(i=0; i<4; i++){
+                btn[i].classList.remove("active");
+            }
+            this.classList.add("active");
+        }
+    </script>
+</body>
+</html>
