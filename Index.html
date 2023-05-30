@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -21,19 +25,19 @@
                 <div class="style-row" id="slide">
                     <div class="style-col">
                         <div class="text">
-                            <p>Jim Kennedy Is a very hardworking Front-End Developer Who is dedicated to meet his client needs.
-                                He has excellent intrapersonal skills that always keeps his clients gladly satisfied.
+                            <p>Hardworking Front-End Developer, dedicated to meet client needs.
+                                Excellent intrapersonal skills that always keeps his clients gladly satisfied.
                             </p>
                             <h3>Zara Larson</h3>
                             <p>Software Engineer</p>
                         </div>
                         <div class="img">
-                            <img src="img/cool.jpg">
+                            <img src="img/cool2.jpg">
                         </div>
                     </div>
                     <div class="style-col">
                         <div class="text">
-                            <p>He always wants the best for every client he works with. 
+                            <p>Always wants the best for every client he works with. 
                                 Client Satisfaction is always top of his agenda, and he never rests until he achieves this.
                             </p>
                             <h3>Grewal Omata</h3>
@@ -45,20 +49,20 @@
                     </div>
                     <div class="style-col">
                         <div class="text">
-                            <p>He is very creative, he knows how to come up with new ideas for every situation.
-                                Even when there might seem to be no way ahead, he knows how to o about such Situation.
+                            <p>Creative, he knows how to come up with new ideas for every situation.
+                                He comes up with solutions to every situation.
                             </p>
                             <h3>Zara Larson</h3>
                             <p>Software Engineer</p>
                         </div>
                         <div class="img">
-                            <img src="img/cool.jpg">
+                            <img src="img/cool2.jpg">
                         </div>
                     </div>
                     <div class="style-col">
                         <div class="text">
-                            <p>Kennedy is very dedicated to his work. This makes him stand out among every other Front-End Developer out there. 
-                                He never tires even if what he's working on seems not to work
+                            <p>Dedicated to his work. He stands out among every other Front-End Developer. 
+                                He never tires even if what he's working on seems not to work.
                             </p>
                             <h3>Ian Zablon</h3>
                             <p>Chemical Engineer</p>
@@ -73,39 +77,6 @@
         
     </div>
     
-    <script>
-        var btn = document.getElementsByClassName("btn");
-        
-        var slide = document.getElementById("slide");
-
-        btn[0].onclick = function (){
-            slide.style.transform = "translateX(0px)";
-            for(i=0; i<4; i++){
-                btn[i].classList.remove("active");
-            }
-            this.classList.add("active");
-        }
-        btn[1].onclick = function (){
-            slide.style.transform = "translateX(-800px)";
-            for(i=0; i<4; i++){
-                btn[i].classList.remove("active");
-            }
-            this.classList.add("active");
-        }
-        btn[2].onclick = function (){
-            slide.style.transform = "translateX(-1600px)";
-            for(i=0; i<4; i++){
-                btn[i].classList.remove("active");
-            }
-            this.classList.add("active");
-        }
-        btn[3].onclick = function (){
-            slide.style.transform = "translateX(-2400px)";
-            for(i=0; i<4; i++){
-                btn[i].classList.remove("active");
-            }
-            this.classList.add("active");
-        }
-    </script>
+    <script src="vanilla.js"></script>
 </body>
 </html>
